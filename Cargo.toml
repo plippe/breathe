@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 lazy_static = "1.4.0"
 yew = "0.19"
+yew-router = "0.16"
