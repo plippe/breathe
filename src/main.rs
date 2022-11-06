@@ -40,7 +40,7 @@ fn app() -> Html {
           <nav class="container" style="position:relative; z-index: 1">
             <hgroup>
                 <h1><Link<Route> to={Route::Index} classes="contrast">{ "Breathe" }</Link<Route>></h1>
-                <h2></h2>
+                <small></small>
             </hgroup>
           </nav>
           <Switch <Route> render={Switch::render(switch)} />
