@@ -1,6 +1,7 @@
 mod box_breathing;
-mod equal_breathing;
 pub mod step;
+mod up_breathing_3_6;
+mod up_breathing_4_8;
 
 use crate::exercises::step::Step;
 
@@ -14,8 +15,9 @@ pub struct Exercise {
 impl Exercise {
     pub fn all() -> Vec<Exercise> {
         vec![
+            up_breathing_3_6::EXERCISE.clone(),
+            up_breathing_4_8::EXERCISE.clone(),
             box_breathing::EXERCISE.clone(),
-            equal_breathing::EXERCISE.clone(),
         ]
     }
 

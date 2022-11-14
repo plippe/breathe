@@ -7,16 +7,16 @@ use std::time::Duration;
 
 lazy_static! {
     pub static ref EXERCISE: Exercise = Exercise {
-        name: "Equal Breathing".to_owned(),
+        name: "Up Breathing (3-6)".to_owned(),
         description: "".to_owned(),
         steps: vec![
             Step {
                 breathing: Breathe::Inhale,
-                duration: Duration::from_secs(4),
+                duration: Duration::from_secs(3),
             },
             Step {
                 breathing: Breathe::Exhale,
-                duration: Duration::from_secs(4),
+                duration: Duration::from_secs(6),
             },
         ]
     };

@@ -7,7 +7,7 @@ use std::time::Duration;
 
 lazy_static! {
     pub static ref EXERCISE: Exercise = Exercise {
-        name: "Box Breathing".to_owned(),
+        name: "Up Breathing (4-8)".to_owned(),
         description: "".to_owned(),
         steps: vec![
             Step {
@@ -15,16 +15,8 @@ lazy_static! {
                 duration: Duration::from_secs(4),
             },
             Step {
-                breathing: Breathe::Hold,
-                duration: Duration::from_secs(2),
-            },
-            Step {
                 breathing: Breathe::Exhale,
-                duration: Duration::from_secs(4),
-            },
-            Step {
-                breathing: Breathe::Hold,
-                duration: Duration::from_secs(2),
+                duration: Duration::from_secs(8),
             },
         ]
     };
